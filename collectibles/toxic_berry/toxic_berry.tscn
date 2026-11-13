@@ -1,0 +1,76 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://collectibles/toxic_berry/toxic_berry.gd" id="1_toxic_script"]
+[ext_resource type="Texture2D" path="res://collectibles/toxic_berry/frame_01.png" id="2_frame_01"]
+[ext_resource type="Texture2D" path="res://collectibles/toxic_berry/frame_02.png" id="3_frame_02"]
+[ext_resource type="Texture2D" path="res://collectibles/toxic_berry/frame_03.png" id="4_frame_03"]
+[ext_resource type="Texture2D" path="res://collectibles/toxic_berry/frame_04.png" id="5_frame_04"]
+[ext_resource type="Texture2D" path="res://collectibles/toxic_berry/frame_05.png" id="6_frame_05"]
+[ext_resource type="Texture2D" path="res://collectibles/toxic_berry/frame_06.png" id="7_frame_06"]
+[ext_resource type="Texture2D" path="res://collectibles/toxic_berry/frame_07.png" id="8_frame_07"]
+[ext_resource type="Texture2D" path="res://collectibles/toxic_berry/frame_08.png" id="9_frame_08"]
+[ext_resource type="Texture2D" path="res://collectibles/toxic_berry/frame_09.png" id="10_frame_09"]
+[ext_resource type="Texture2D" path="res://collectibles/toxic_berry/frame_10.png" id="11_frame_10"]
+[ext_resource type="Texture2D" path="res://collectibles/toxic_berry/frame_11.png" id="12_frame_11"]
+[ext_resource type="Texture2D" path="res://collectibles/toxic_berry/frame_12.png" id="13_frame_12"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_toxic_berry"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_frame_01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_frame_02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_frame_03")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_frame_04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_frame_05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_frame_06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_frame_07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_frame_08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_frame_09")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_frame_10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_frame_11")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_frame_12")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_toxic_berry"]
+radius = 7.0
+
+[node name="ToxicBerry" type="Area2D"]
+collision_layer = 0
+collision_mask = 1
+script = ExtResource("1_toxic_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_toxic_berry")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(2, 2)
+shape = SubResource("CircleShape2D_toxic_berry")

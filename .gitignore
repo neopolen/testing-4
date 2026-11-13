@@ -1,0 +1,10 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Local diagnostics and generated previews
+*.log
+/heat_slot_preview.png
+/heat_slot_preview.png.import
+/heat_slot_track_preview.png
+/heat_slot_track_preview.png.import

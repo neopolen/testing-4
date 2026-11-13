@@ -1,0 +1,89 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://game_over/game_over_screen.gd" id="1_game_over_script"]
+[ext_resource type="FontFile" uid="uid://bd6vph762w17f" path="res://fonts/PixelifySans.ttf" id="2_pixelify_sans"]
+[ext_resource type="Texture2D" path="res://game_over/frames/frame_01.png" id="3_frame_01"]
+[ext_resource type="Texture2D" path="res://game_over/frames/frame_02.png" id="4_frame_02"]
+[ext_resource type="Texture2D" path="res://game_over/frames/frame_03.png" id="5_frame_03"]
+[ext_resource type="Texture2D" path="res://game_over/frames/frame_04.png" id="6_frame_04"]
+[ext_resource type="Texture2D" path="res://game_over/frames/frame_05.png" id="7_frame_05"]
+[ext_resource type="Texture2D" path="res://game_over/frames/frame_06.png" id="8_frame_06"]
+[ext_resource type="Texture2D" path="res://game_over/frames/frame_07.png" id="9_frame_07"]
+[ext_resource type="Texture2D" path="res://game_over/frames/frame_08.png" id="10_frame_08"]
+[ext_resource type="Texture2D" path="res://game_over/frames/frame_09.png" id="11_frame_09"]
+[ext_resource type="Texture2D" path="res://game_over/frames/frame_10.png" id="12_frame_10"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_game_over"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_frame_01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_frame_02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_frame_03")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_frame_04")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_frame_05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_frame_06")
+}, {
+"duration": 5.0,
+"texture": ExtResource("9_frame_07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_frame_08")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_frame_09")
+}, {
+"duration": 5.0,
+"texture": ExtResource("12_frame_10")
+}],
+"loop": false,
+"name": &"game_over",
+"speed": 10.0
+}]
+
+[node name="GameOverScreen" type="CanvasLayer"]
+process_mode = 3
+layer = 30
+script = ExtResource("1_game_over_script")
+
+[node name="BlackBackground" type="ColorRect" parent="."]
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_game_over")
+animation = &"game_over"
+
+[node name="PromptMask" type="ColorRect" parent="."]
+unique_name_in_owner = true
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="PromptLabel" type="Label" parent="."]
+unique_name_in_owner = true
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("2_pixelify_sans")
+theme_override_font_sizes/font_size = 20
+text = "press space to try again"
+horizontal_alignment = 1
+vertical_alignment = 1

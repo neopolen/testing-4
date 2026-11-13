@@ -1,0 +1,58 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://hazards/falling_spikes/falling_spike.gd" id="1_falling_spike_script"]
+[ext_resource type="Texture2D" path="res://hazards/falling_spikes/fg_blue.png" id="2_fg_blue"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fg_blue_01"]
+atlas = ExtResource("2_fg_blue")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fg_blue_02"]
+atlas = ExtResource("2_fg_blue")
+region = Rect2(20, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fg_blue_03"]
+atlas = ExtResource("2_fg_blue")
+region = Rect2(40, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fg_blue_04"]
+atlas = ExtResource("2_fg_blue")
+region = Rect2(60, 0, 20, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fg_blue"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fg_blue_01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fg_blue_02")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fg_blue_03")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fg_blue_04")
+}],
+"loop": true,
+"name": &"fg_blue",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_falling_spike"]
+size = Vector2(9, 10)
+
+[node name="FallingSpike" type="Area2D"]
+scale = Vector2(2, 2)
+collision_layer = 0
+collision_mask = 3
+script = ExtResource("1_falling_spike_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_fg_blue")
+animation = &"fg_blue"
+autoplay = &"fg_blue"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_falling_spike")

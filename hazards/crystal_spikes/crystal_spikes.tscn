@@ -1,0 +1,59 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://hazards/crystal_spikes/crystal_spikes.gd" id="1_spikes_script"]
+[ext_resource type="Texture2D" path="res://hazards/crystal_spikes/fg_purple_spikes.png" id="2_spikes_sheet"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fg_purple_01"]
+atlas = ExtResource("2_spikes_sheet")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fg_purple_02"]
+atlas = ExtResource("2_spikes_sheet")
+region = Rect2(20, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fg_purple_03"]
+atlas = ExtResource("2_spikes_sheet")
+region = Rect2(40, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fg_purple_04"]
+atlas = ExtResource("2_spikes_sheet")
+region = Rect2(60, 0, 20, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fg_purple"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fg_purple_01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fg_purple_02")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fg_purple_03")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fg_purple_04")
+}],
+"loop": true,
+"name": &"fg_purple",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_crystal_spikes"]
+size = Vector2(34, 28)
+
+[node name="CrystalSpikes" type="Area2D"]
+collision_layer = 0
+collision_mask = 1
+script = ExtResource("1_spikes_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+z_index = 1
+scale = Vector2(2, 2)
+texture_filter = 0
+sprite_frames = SubResource("SpriteFrames_fg_purple")
+animation = &"fg_purple"
+autoplay = &"fg_purple"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_crystal_spikes")

@@ -1,0 +1,21 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://bouncing_platform/bouncing_platform.gd" id="1_bouncer_script"]
+[ext_resource type="Texture2D" path="res://bouncing_platform/bouncing_platform.png" id="2_bouncer_texture"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bouncer"]
+size = Vector2(64, 7)
+
+[node name="BouncingPlatform" type="AnimatableBody2D" groups=["bouncing_platforms"]]
+collision_layer = 2
+script = ExtResource("1_bouncer_script")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -15)
+shape = SubResource("RectangleShape2D_bouncer")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(3, 3)
+texture_filter = 0
+texture = ExtResource("2_bouncer_texture")
+modulate = Color(1.1, 1.45, 1.05, 1)

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://eny82fnh6oyt"]
+
+[ext_resource type="Script" uid="uid://b6p3jjqogejju" path="res://platform/platform.gd" id="1_platform"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_platform"]
+resource_local_to_scene = true
+size = Vector2(122, 10)
+
+[node name="Platform" type="AnimatableBody2D" unique_id=88966588]
+collision_layer = 2
+script = ExtResource("1_platform")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1553416198]
+shape = SubResource("RectangleShape2D_platform")

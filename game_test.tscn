@@ -1,0 +1,388 @@
+[gd_scene format=3 uid="uid://bc5idm4fq62wu"]
+
+[ext_resource type="Texture2D" uid="uid://4aerr6in8wgw" path="res://halt/ari_19.png" id="1_ubem8"]
+[ext_resource type="Texture2D" uid="uid://pgkalqgj148j" path="res://ari/facepalm/ari_38.png" id="2_ud0u7"]
+[ext_resource type="Texture2D" uid="uid://btv04mjrnknkj" path="res://halt/ari_20.png" id="2_xpqcl"]
+[ext_resource type="Texture2D" uid="uid://br4pcl3mscwtx" path="res://halt/ari_21.png" id="3_52mlr"]
+[ext_resource type="Texture2D" uid="uid://b64bebxttlsgc" path="res://ari/facepalm/ari_39.png" id="3_fqddk"]
+[ext_resource type="Texture2D" uid="uid://d4n1e8etmgydi" path="res://ari/idle/ari_00.png" id="4_cvbc1"]
+[ext_resource type="Texture2D" uid="uid://xbj42lgtrs72" path="res://ari/facepalm/ari_40.png" id="4_lu1ed"]
+[ext_resource type="Texture2D" uid="uid://m85wmhfp45l1" path="res://ari/facepalm/ari_41.png" id="5_e77b8"]
+[ext_resource type="Texture2D" uid="uid://bmpxhe17up4hw" path="res://ari/idle/ari_01.png" id="5_y8pq1"]
+[ext_resource type="Texture2D" uid="uid://err1t7k4txix" path="res://ari/idle/ari_02.png" id="6_cxbml"]
+[ext_resource type="Texture2D" uid="uid://btn7o78w6ewwx" path="res://ari/facepalm/ari_42.png" id="6_knua3"]
+[ext_resource type="Texture2D" uid="uid://v1tjacsw1bgp" path="res://ari/idle/ari_03.png" id="7_bgduw"]
+[ext_resource type="Texture2D" uid="uid://boffgpn8g02s5" path="res://ari/idle/ari_04.png" id="8_atl4s"]
+[ext_resource type="Texture2D" uid="uid://dib8bwfjdtalg" path="res://ari/idle/ari_05.png" id="9_umgcg"]
+[ext_resource type="Texture2D" uid="uid://c53u1i6i44n4e" path="res://ari/idle/ari_06.png" id="10_dp485"]
+[ext_resource type="Texture2D" uid="uid://7wfwy7mfnx5a" path="res://ari/idle/ari_07.png" id="11_grv87"]
+[ext_resource type="Texture2D" uid="uid://c8djvjuy5wpff" path="res://ari/idle/ari_08.png" id="12_halye"]
+[ext_resource type="Texture2D" uid="uid://cmg6shxi0m7xy" path="res://ari/idle/ari_09.png" id="13_ewtkn"]
+[ext_resource type="Texture2D" uid="uid://clh3x3dklg1mj" path="res://ari/walking/ari_10.png" id="14_ud0u7"]
+[ext_resource type="Texture2D" uid="uid://dckub0bfl68yo" path="res://ari/walking/ari_11.png" id="15_fqddk"]
+[ext_resource type="Texture2D" uid="uid://dgqjhu17gqrro" path="res://ari/looking down/ari_35.png" id="15_umgcg"]
+[ext_resource type="Texture2D" uid="uid://b2w6xvlw4d54p" path="res://ari/looking down/ari_36.png" id="16_dp485"]
+[ext_resource type="Texture2D" uid="uid://bo5skqlxanffo" path="res://ari/walking/ari_12.png" id="16_lu1ed"]
+[ext_resource type="Texture2D" uid="uid://cq3stb6mjlepy" path="res://ari/walking/ari_13.png" id="17_e77b8"]
+[ext_resource type="Texture2D" uid="uid://byrdv6brmj2v8" path="res://ari/looking down/ari_37.png" id="17_grv87"]
+[ext_resource type="Texture2D" uid="uid://cujaerv8oiock" path="res://ari/looking up/ari_32.png" id="18_halye"]
+[ext_resource type="Texture2D" uid="uid://de8v7cbntnw70" path="res://ari/walking/ari_14.png" id="18_knua3"]
+[ext_resource type="Texture2D" uid="uid://dlespjhbq7a4" path="res://ari/looking up/ari_33.png" id="19_ewtkn"]
+[ext_resource type="Texture2D" uid="uid://d184kvxapxxvi" path="res://ari/walking/ari_15.png" id="19_p8lfs"]
+[ext_resource type="Texture2D" uid="uid://df10wtkxxq55u" path="res://ari/walking/ari_16.png" id="20_0gjl6"]
+[ext_resource type="Texture2D" uid="uid://djhf120rrk1la" path="res://ari/looking up/ari_34.png" id="20_ud0u7"]
+[ext_resource type="Texture2D" uid="uid://v8knwpf4coto" path="res://ari/walking/ari_17.png" id="21_s8f55"]
+[ext_resource type="Texture2D" uid="uid://b0mmqes68j7l1" path="res://ari/walking/ari_18.png" id="22_6j3qo"]
+[ext_resource type="Script" uid="uid://cf5hjaf1j553m" path="res://game_test.gd" id="23_player_script"]
+[ext_resource type="Texture2D" uid="uid://dehrmj11sp8xc" path="res://ari/assets for ari/dust_particle.png" id="24_52mlr"]
+[ext_resource type="Texture2D" uid="uid://g6xaykjyvfch" path="res://ari/assets for ari/DashParticles.png" id="25_dash_particles"]
+[ext_resource type="Texture2D" uid="uid://dxd0eksirlihn" path="res://ari/dash/ari_23.png" id="26_dash_23"]
+[ext_resource type="Texture2D" uid="uid://bnwxpquvokava" path="res://ari/dash/ari_24.png" id="27_dash_24"]
+[ext_resource type="Texture2D" uid="uid://cyvhbbssd75i1" path="res://ari/dash/ari_25.png" id="28_dash_25"]
+[ext_resource type="Texture2D" uid="uid://cobdqka6mi03" path="res://ari/dash/ari_26.png" id="29_dash_26"]
+[ext_resource type="Texture2D" uid="uid://d2xyfcymrkyc0" path="res://ari/dash/ari_27.png" id="30_dash_27"]
+[ext_resource type="Texture2D" uid="uid://ciow5vehtss1j" path="res://ari/dash/ari_28.png" id="31_dash_28"]
+[ext_resource type="Texture2D" uid="uid://p0ecni706xv5" path="res://ari/dash/ari_29.png" id="32_dash_29"]
+[ext_resource type="Texture2D" uid="uid://06mx8hwhsgaa" path="res://ari/dash/ari_30.png" id="33_dash_30"]
+[ext_resource type="Texture2D" uid="uid://bvhqxcokbq8xi" path="res://ari/dash/ari_31.png" id="34_dash_31"]
+[ext_resource type="Texture2D" uid="uid://8x328qpjmvyo" path="res://ari/assets for ari/doublejump particle.png" id="35_double_jump_sheet"]
+
+[ext_resource type="Texture2D" path="res://ari/super_dash/ari_31.png" id="super_dash_31"]
+[ext_resource type="Texture2D" path="res://ari/super_dash/ari_32.png" id="super_dash_32"]
+[ext_resource type="Texture2D" path="res://ari/super_dash/ari_33.png" id="super_dash_33"]
+[ext_resource type="Texture2D" path="res://ari/super_dash/ari_34.png" id="super_dash_34"]
+[ext_resource type="Texture2D" path="res://ari/super_dash/ari_35.png" id="super_dash_35"]
+[ext_resource type="Texture2D" path="res://ari/super_dash/ari_36.png" id="super_dash_36"]
+[ext_resource type="Texture2D" path="res://ari/super_dash/ari_37.png" id="super_dash_37"]
+[ext_resource type="Texture2D" path="res://ari/super_dash/ari_38.png" id="super_dash_38"]
+[ext_resource type="Texture2D" path="res://ari/super_dash/ari_39.png" id="super_dash_39"]
+[ext_resource type="Texture2D" path="res://ari/super_dash/ari_40.png" id="super_dash_40"]
+[ext_resource type="Texture2D" path="res://ari/super_dash/ari_41.png" id="super_dash_41"]
+[ext_resource type="Texture2D" path="res://ari/super_dash/ari_42.png" id="super_dash_42"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m7mdn"]
+animations = [{
+"frames": [{
+"duration": 0.8,
+"texture": ExtResource("26_dash_23")
+}, {
+"duration": 0.8,
+"texture": ExtResource("27_dash_24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_dash_25")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_dash_26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_dash_27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_dash_28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_dash_29")
+}, {
+"duration": 0.8,
+"texture": ExtResource("33_dash_30")
+}, {
+"duration": 0.8,
+"texture": ExtResource("34_dash_31")
+}],
+"loop": 0,
+"name": &"dash",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 0.5,
+"texture": ExtResource("2_ud0u7")
+}, {
+"duration": 1.5,
+"texture": ExtResource("3_fqddk")
+}, {
+"duration": 1.5,
+"texture": ExtResource("4_lu1ed")
+}, {
+"duration": 5.0,
+"texture": ExtResource("5_e77b8")
+}, {
+"duration": 7.0,
+"texture": ExtResource("6_knua3")
+}],
+"loop": 1,
+"name": &"face palm",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.5,
+"texture": ExtResource("1_ubem8")
+}, {
+"duration": 1.5,
+"texture": ExtResource("2_xpqcl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_52mlr")
+}],
+"loop": 0,
+"name": &"halt",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_cvbc1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_y8pq1")
+}, {
+"duration": 3.0,
+"texture": ExtResource("6_cxbml")
+}, {
+"duration": 3.0,
+"texture": ExtResource("7_bgduw")
+}, {
+"duration": 2.0,
+"texture": ExtResource("8_atl4s")
+}, {
+"duration": 2.0,
+"texture": ExtResource("9_umgcg")
+}, {
+"duration": 3.0,
+"texture": ExtResource("10_dp485")
+}, {
+"duration": 3.0,
+"texture": ExtResource("11_grv87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_halye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ewtkn")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_umgcg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_dp485")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_grv87")
+}],
+"loop": 1,
+"name": &"looking down",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_halye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ewtkn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ud0u7")
+}],
+"loop": 1,
+"name": &"looking up",
+"speed": 10.0
+}, {
+"frames": [{"duration": 1.0, "texture": ExtResource("super_dash_31")}, {"duration": 1.0, "texture": ExtResource("super_dash_32")}, {"duration": 1.0, "texture": ExtResource("super_dash_33")}, {"duration": 1.0, "texture": ExtResource("super_dash_34")}, {"duration": 1.0, "texture": ExtResource("super_dash_35")}, {"duration": 1.0, "texture": ExtResource("super_dash_36")}, {"duration": 1.0, "texture": ExtResource("super_dash_37")}, {"duration": 1.0, "texture": ExtResource("super_dash_38")}, {"duration": 1.0, "texture": ExtResource("super_dash_39")}, {"duration": 1.0, "texture": ExtResource("super_dash_40")}, {"duration": 1.0, "texture": ExtResource("super_dash_41")}, {"duration": 1.0, "texture": ExtResource("super_dash_42")}],
+"loop": 1,
+"name": &"super_dash",
+"speed": 12.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_ud0u7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_fqddk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_lu1ed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_e77b8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_knua3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_p8lfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_0gjl6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_s8f55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6j3qo")
+}],
+"loop": 1,
+"name": &"walking",
+"speed": 11.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_double_jump_01"]
+atlas = ExtResource("35_double_jump_sheet")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_double_jump_02"]
+atlas = ExtResource("35_double_jump_sheet")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_double_jump_03"]
+atlas = ExtResource("35_double_jump_sheet")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_double_jump_04"]
+atlas = ExtResource("35_double_jump_sheet")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_double_jump_effect"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_double_jump_01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_double_jump_02")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_double_jump_03")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_double_jump_04")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_double_jump_03")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_double_jump_02")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_double_jump_01")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_double_jump_02")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_double_jump_03")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_double_jump_04")
+}],
+"loop": 0,
+"name": &"double jump effect",
+"speed": 20.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_player"]
+size = Vector2(16, 23.076923)
+
+[sub_resource type="Gradient" id="Gradient_dust_fade"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_dust_fade"]
+gradient = SubResource("Gradient_dust_fade")
+
+[sub_resource type="Curve" id="Curve_dust_scale"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_dust_scale"]
+curve = SubResource("Curve_dust_scale")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_52mlr"]
+particle_flag_disable_z = true
+spread = 35.0
+initial_velocity_min = 1.0
+initial_velocity_max = 10.0
+gravity = Vector3(0, -8, 0)
+scale_min = 0.9
+scale_max = 1.5
+scale_curve = SubResource("CurveTexture_dust_scale")
+color_ramp = SubResource("GradientTexture1D_dust_fade")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_dash"]
+particle_flag_disable_z = true
+direction = Vector3(-1, 0, 0)
+spread = 16.0
+initial_velocity_min = 4.0
+initial_velocity_max = 12.0
+gravity = Vector3(0, 0, 0)
+scale_min = 0.65
+scale_max = 0.9
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_health_background"]
+bg_color = Color(0.04, 0.05, 0.07, 0.92)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.015, 0.02, 0.025, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_health_fill"]
+bg_color = Color(0.9, 0.12, 0.16, 1)
+
+[node name="Player" type="CharacterBody2D" unique_id=682156320]
+collision_mask = 2
+script = ExtResource("23_player_script")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=635292340]
+unique_name_in_owner = true
+position = Vector2(0, -12)
+scale = Vector2(2.25, 2.25)
+sprite_frames = SubResource("SpriteFrames_m7mdn")
+animation = &"idle"
+
+[node name="DoubleJumpEffect" type="AnimatedSprite2D" parent="." unique_id=923623096]
+visible = false
+modulate = Color(1, 1, 1, 0.85)
+z_index = -1
+position = Vector2(0, 24)
+scale = Vector2(0.75, 0.75)
+sprite_frames = SubResource("SpriteFrames_double_jump_effect")
+animation = &"double jump effect"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1570509337]
+position = Vector2(0, -8.999999)
+scale = Vector2(1.3, 1.3)
+shape = SubResource("RectangleShape2D_player")
+
+[node name="Dust" type="GPUParticles2D" parent="." unique_id=294439610]
+show_behind_parent = true
+position = Vector2(0, 0.5)
+scale = Vector2(2, 2)
+emitting = false
+texture = ExtResource("24_52mlr")
+process_material = SubResource("ParticleProcessMaterial_52mlr")
+
+[node name="DashParticles" type="GPUParticles2D" parent="." unique_id=1034882210]
+show_behind_parent = true
+position = Vector2(0, -4)
+emitting = false
+amount = 5
+texture = ExtResource("25_dash_particles")
+lifetime = 0.3
+process_material = SubResource("ParticleProcessMaterial_dash")
+
+[node name="HealthBar" type="ProgressBar" parent="." unique_id=177480633]
+z_index = 2
+offset_left = -28.0
+offset_top = -56.0
+offset_right = 28.0
+offset_bottom = -49.0
+mouse_filter = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_health_background")
+theme_override_styles/fill = SubResource("StyleBoxFlat_health_fill")
+value = 100.0
+max_value = 100.0
+min_value = 0.0
+show_percentage = false
