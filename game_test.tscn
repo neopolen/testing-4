@@ -338,7 +338,7 @@ script = ExtResource("23_player_script")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=635292340]
 unique_name_in_owner = true
 position = Vector2(0, -12)
-scale = Vector2(2.25, 2.25)
+scale = Vector2(2.1, 2.1)
 sprite_frames = SubResource("SpriteFrames_m7mdn")
 animation = &"idle"
 

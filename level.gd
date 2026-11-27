@@ -6,7 +6,7 @@ var elapsed_time := 0.0
 
 const HINT_FULL_ALPHA_DISTANCE := 125.0
 const HINT_HIDDEN_DISTANCE := 340.0
-const TOXIC_HEAT_LIMIT := 6
+const TOXIC_HEAT_LIMIT := 4
 const HEAT_GAUGE_EMPTY_COLOR := Color(0.18, 0.26, 0.18, 0.75)
 
 @onready var count_label: Label = $HUD/MoonBerryCount
@@ -96,7 +96,7 @@ func _create_end_portal_trigger() -> void:
 	trigger.collision_mask = 1
 	var trigger_shape := CollisionShape2D.new()
 	var rectangle := RectangleShape2D.new()
-	rectangle.size = Vector2(110, 116)
+	rectangle.size = Vector2(140, 148)
 	trigger_shape.shape = rectangle
 	trigger.add_child(trigger_shape)
 	end_portal.add_child(trigger)

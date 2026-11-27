@@ -11,7 +11,7 @@ const MAX_HEALTH := 100.0
 const DAMAGE_FLASH_COLOR := Color(1.0, 0.12, 0.16, 1.0)
 const SUPER_DASH_SPEED_MULTIPLIER := 3.4
 const SUPER_DASH_EXTRA_DURATION := 1.0
-const TOXIC_HEAT_LIMIT := 6
+const TOXIC_HEAT_LIMIT := 4
 
 var jump_count := 0
 var _bounce_extra_jump_available := false

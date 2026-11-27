@@ -762,16 +762,6 @@ custom_minimum_size = Vector2(22, 22)
 layout_mode = 2
 texture = SubResource("AtlasTexture_heat_bar_04")
 
-[node name="GlowBar5" type="TextureRect" parent="HUD/HeatGaugeGlow" unique_id=760486082]
-custom_minimum_size = Vector2(22, 22)
-layout_mode = 2
-texture = SubResource("AtlasTexture_heat_bar_05")
-
-[node name="GlowBar6" type="TextureRect" parent="HUD/HeatGaugeGlow" unique_id=440026624]
-custom_minimum_size = Vector2(22, 22)
-layout_mode = 2
-texture = SubResource("AtlasTexture_heat_bar_06")
-
 [node name="HeatGauge" type="HBoxContainer" parent="HUD" unique_id=722846485]
 z_index = 1
 offset_left = 18.0
@@ -804,14 +794,14 @@ custom_minimum_size = Vector2(20, 20)
 layout_mode = 2
 texture = SubResource("AtlasTexture_heat_bar_04")
 
-[node name="Bar5" type="TextureRect" parent="HUD/HeatGauge" unique_id=1514708512]
-modulate = Color(0.18, 0.26, 0.18, 0.75)
-custom_minimum_size = Vector2(20, 20)
-layout_mode = 2
-texture = SubResource("AtlasTexture_heat_bar_05")
-
-[node name="Bar6" type="TextureRect" parent="HUD/HeatGauge" unique_id=573024582]
-modulate = Color(0.18, 0.26, 0.18, 0.75)
-custom_minimum_size = Vector2(20, 20)
-layout_mode = 2
-texture = SubResource("AtlasTexture_heat_bar_06")
+[node name="ToxicBerryPrompt" type="Label" parent="HUD" unique_id=1585857109]
+offset_left = 110.0
+offset_top = 48.0
+offset_right = 345.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 3
+theme_override_fonts/font = ExtResource("14_pixelify_sans")
+theme_override_font_sizes/font_size = 14
+text = "Collect the Toxic Berries!"
